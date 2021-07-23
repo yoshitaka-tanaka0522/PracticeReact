@@ -15,7 +15,7 @@ const App = () => {
   const onClickSwitchShowFlag = () => {
     setFaceShowFlag(!faceShowFlag);
   };
-
+  //numのステートに変更があった時だけ以下のuseeffectの処理が動くようになっている。
   useEffect(() => {
     if (num > 0) {
       if (num % 3 === 0) {
